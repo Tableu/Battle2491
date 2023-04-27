@@ -16,9 +16,9 @@ public class CameraZoom : MonoBehaviour
 
     private void Zoom(InputAction.CallbackContext callbackContext)
     {
-        Vector2 value = callbackContext.ReadValue<Vector2>();
+        float value = callbackContext.ReadValue<float>();
         
-        VirtualCamera.m_Lens.OrthographicSize += Mathf.Sign(value.y)*Speed;
+        VirtualCamera.m_Lens.OrthographicSize += Mathf.Sign(value)*Speed;
         if (VirtualCamera.m_Lens.OrthographicSize < MinSize)
         {
             VirtualCamera.m_Lens.OrthographicSize = MinSize;
