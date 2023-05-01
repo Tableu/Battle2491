@@ -13,9 +13,9 @@ TagManager:
   - UI
   - Explored Area
   - Unexplored Area
-  - 
-  - 
-  - 
+  - Background
+  - Enemies
+  - Player
   - 
   - 
   - 
@@ -41,9 +41,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Enemies
-    uniqueID: 1621342959
+  - name: Background
+    uniqueID: 2856859685
     locked: 0
   - name: Player
     uniqueID: 3744761081
+    locked: 0
+  - name: Enemies
+    uniqueID: 1621342959
+    locked: 0
+  - name: Fog of War
+    uniqueID: 3166336269
     locked: 0
