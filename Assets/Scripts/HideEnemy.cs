@@ -16,7 +16,6 @@ public class HideEnemy : MonoBehaviour
     {
         counter++;
         Visuals.SetActive(counter > 0);
-        Debug.Log("check");
     }
 
     private void OnTriggerExit2D(Collider2D other)
