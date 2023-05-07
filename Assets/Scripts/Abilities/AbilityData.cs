@@ -17,7 +17,7 @@ namespace Systems.Abilities
         [SerializeField] private string attackName;
         [SerializeField] private int cost;
         [SerializeField] private List<ModifierData> modifiers;
-        [SerializeField] private float fireRate;
+        [SerializeField] private int cooldown;
         //[SerializeField] private ButtonData buttonData;
         [SerializeField] private FleetAgroStatus validTargets;
         [SerializeField] private List<string> tags;
@@ -30,7 +30,7 @@ namespace Systems.Abilities
         [SerializeField] private float speed;
 
         public List<ModifierData> Modifiers => modifiers;
-        public float Firerate => fireRate;
+        public int Cooldown => cooldown;
         //public ButtonData ButtonData => buttonData;
         public FleetAgroStatus ValidTargets => validTargets;
         public List<string> Tags => tags;

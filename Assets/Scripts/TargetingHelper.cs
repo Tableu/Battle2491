@@ -63,6 +63,7 @@ namespace Ships.Components
             {
                 _targets.Add(target);
                 _target = target;
+                OnTargetChanged?.Invoke();
             }
         }
 
@@ -72,6 +73,10 @@ namespace Ships.Components
             if (target != null)
             {
                 _targets.Remove(target);
+                if (_targets.Count == 0)
+                {
+                    OnTargetChanged?.Invoke();
+                }
             }
         }
     }

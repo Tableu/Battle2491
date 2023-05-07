@@ -1,3 +1,4 @@
+using Ships.Components;
 using UnityEngine;
 
 public class HideEnemy : MonoBehaviour
@@ -8,6 +9,8 @@ public class HideEnemy : MonoBehaviour
 
     void Start()
     {
+        ShipStats shipStats = GetComponent<ShipStats>();
+        Visuals = shipStats.Visuals;
         Visuals.SetActive(!HideAtStart);
         counter = 0;
     }

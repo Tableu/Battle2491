@@ -1,3 +1,4 @@
+using Ships.DataManagement;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -10,6 +11,7 @@ public class BuyButton : MonoBehaviour
     [SerializeField] private Slider reloadBar;
     [SerializeField] private Button button;
     [SerializeField] private TextMeshProUGUI text;
+    [SerializeField] private ShipData shipData;
 
     private bool isReloading;
     private float fillTime;
@@ -53,5 +55,7 @@ public class BuyButton : MonoBehaviour
         reloadBar.gameObject.SetActive(true);
         isReloading = true;
         text.gameObject.SetActive(false);
+        GlobalReferences.Instance.TurretManager.SpawnShip(shipData,
+            GlobalReferences.Instance.TurretManager.transform.position + new Vector3(1,1,0));
     }
 }

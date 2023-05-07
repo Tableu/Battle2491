@@ -1,4 +1,5 @@
 using System;
+using Ships.Fleets;
 using UnityEngine;
 
 public class GlobalReferences : MonoBehaviour
@@ -10,7 +11,13 @@ public class GlobalReferences : MonoBehaviour
     [Header("References")]
     [SerializeField] private GameObject canvas;
 
+    [SerializeField] private FleetManager turretManager;
+    [SerializeField] private GameObject fogOfWarCanvas;
+
     public GameObject Canvas => canvas;
+    public GameObject FogOfWarCanvas => fogOfWarCanvas;
+
+    public FleetManager TurretManager => turretManager;
 
     public PlayerInputActions PlayerInputActions
     {

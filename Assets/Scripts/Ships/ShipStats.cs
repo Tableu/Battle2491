@@ -13,8 +13,12 @@ namespace Ships.Components
     {
         private GameObject _visuals;
         [SerializeField] private ShipData data;
+        [SerializeField] private CircleCollider2D rangeCollider;
+        [SerializeField] private GameObject exploredCircle;
+        [SerializeField] private GameObject unexploredCircle;
         public ShipData Data => data;
         public GameObject Visuals => _visuals;
+        public CircleCollider2D RangeCollider => rangeCollider; 
         private TargetingHelper _targetingHelper;
         public FleetManager Fleet { get; private set; }
 
@@ -68,16 +72,24 @@ namespace Ships.Components
             SensorRange.UpdateBaseValue(data.SensorRange);
 
             // Add ship visuals
-            //todo rework this to handle spawning
-            //_visuals = Instantiate(data.Visuals, ShipVisualsManager.Instance.GetParent());
-            //_visuals.transform.position = ShipVisualsManager.Instance.GetPosition();
-            
+            _visuals = Instantiate(data.Visuals, transform);
+
             //Init hull
             ShipHealth shipHealth = gameObject.AddComponent<ShipHealth>();
             shipHealth.SetData(data.BaseHealth, _visuals);
             
             _targetingHelper = gameObject.AddComponent<TargetingHelper>();
             _targetingHelper.Initialize(data, this);
+            rangeCollider.radius = data.SensorRange;
+            if (unexploredCircle != null)
+            {
+                unexploredCircle.transform.localScale = new Vector3(2*data.SensorRange, 2*data.SensorRange, 1);
+            }
+
+            if (exploredCircle != null)
+            {
+                exploredCircle.transform.localScale = new Vector3(2*data.SensorRange, 2*data.SensorRange, 1);
+            }
         }
 
         public event Action OnShipDestroyed;
