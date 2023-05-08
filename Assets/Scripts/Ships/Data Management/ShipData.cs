@@ -16,7 +16,7 @@ namespace Ships.DataManagement
         [Header("Info")]
         [SerializeField] private string displayName;
         [SerializeField] private GameObject visuals;
-        [SerializeField] private Sprite mapIcon;
+        [SerializeField] private Sprite shopIcon;
         [SerializeField] private int cost;
         [SerializeField] private bool blocksMovement = true;
         [SerializeField] private AbilityData abilityData;
@@ -29,6 +29,7 @@ namespace Ships.DataManagement
 
         [Header("Config")]
         [SerializeField] private float targetRange;
+        [SerializeField] private float buyCooldown;
         public float BaseHealth => health;
         public float BaseSpeedMultiplier => speedMultiplier;
         public float BaseDamageMultiplier => damageMultiplier;
@@ -38,7 +39,8 @@ namespace Ships.DataManagement
         public float SensorRange => sensorRange;
         public string DisplayName => displayName;
         public GameObject Visuals => visuals;
-        public Sprite MapIcon => mapIcon;
+        public Sprite ShopIcon => shopIcon;
         public int Cost => cost;
+        public float BuyCooldown => buyCooldown;
     }
 }

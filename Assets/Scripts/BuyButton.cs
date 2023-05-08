@@ -7,7 +7,8 @@ public class BuyButton : MonoBehaviour
 {
     public Color ReloadColor;
 
-    [SerializeField] private Image[] images;
+    [SerializeField] private Image shipIcon;
+    [SerializeField] private Image background;
     [SerializeField] private Slider reloadBar;
     [SerializeField] private Button button;
     [SerializeField] private TextMeshProUGUI text;
@@ -19,8 +20,11 @@ public class BuyButton : MonoBehaviour
     void Start()
     {
         isReloading = false;
+        reloadBar.maxValue = shipData.BuyCooldown;
         reloadBar.value = reloadBar.minValue;
         button.onClick.AddListener(OnClick);
+        text.text = shipData.Cost.ToString();
+        shipIcon.sprite = shipData.ShopIcon;
     }
 
     // Update is called once per frame
@@ -31,10 +35,8 @@ public class BuyButton : MonoBehaviour
             reloadBar.value += Time.deltaTime;
             if (reloadBar.value >= reloadBar.maxValue)
             {
-                foreach (var image in images)
-                {
-                    image.color = Color.white;
-                }
+                shipIcon.color = Color.white;
+                background.color = Color.white;
                 reloadBar.value = reloadBar.minValue;
                 reloadBar.gameObject.SetActive(false);
                 isReloading = false;
@@ -46,11 +48,13 @@ public class BuyButton : MonoBehaviour
 
     private void OnClick()
     {
-        foreach (var image in images)
+        if (!MoneyResource.Instance.UseMoney(shipData.Cost))
         {
-            image.color = ReloadColor;
+            return;
         }
 
+        shipIcon.color = ReloadColor;
+        background.color = ReloadColor;
         button.interactable = false;
         reloadBar.gameObject.SetActive(true);
         isReloading = true;

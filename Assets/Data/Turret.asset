@@ -16,7 +16,7 @@ MonoBehaviour:
   parentList: {fileID: 11400000, guid: e361c69a8f7f4984b8f8d7f2db30f1fd, type: 2}
   displayName: Turret
   visuals: {fileID: 7280561497704080993, guid: 18df64cd7077e294eaac343306660e5b, type: 3}
-  mapIcon: {fileID: 0}
+  shopIcon: {fileID: -2335896769177285084, guid: db6cf2cf4a2f7574a918efded1522436, type: 3}
   cost: 100
   blocksMovement: 0
   abilityData: {fileID: 11400000, guid: 5d85a21ec532b914cbcb1282c020a690, type: 2}
@@ -25,3 +25,4 @@ MonoBehaviour:
   damageMultiplier: 1
   sensorRange: 2
   targetRange: 2
+  buyCooldown: 1

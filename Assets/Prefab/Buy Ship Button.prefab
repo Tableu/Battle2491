@@ -201,7 +201,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -14.4369}
+  m_AnchoredPosition: {x: 0.0000019073486, y: -14.437}
   m_SizeDelta: {x: 0, y: -38.6101}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3636667458854353087
@@ -234,8 +234,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 100
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: ae536d39c2db39145a50f4c75985b842, type: 2}
+  m_sharedMaterial: {fileID: -6529085395005811912, guid: ae536d39c2db39145a50f4c75985b842, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -440,12 +440,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ReloadColor: {r: 0.5943396, g: 0.5943396, b: 0.5943396, a: 1}
-  images:
-  - {fileID: 3636667459244454795}
-  - {fileID: 3636667459291194619}
+  shipIcon: {fileID: 3636667459291194619}
+  background: {fileID: 3636667459244454795}
   reloadBar: {fileID: 3636667458309007136}
   button: {fileID: 3636667459169468794}
   text: {fileID: 3636667458854353086}
+  shipData: {fileID: 11400000, guid: 573c4f7610f797a4f8914085d3e36558, type: 2}
 --- !u!1 &3636667459244454805
 GameObject:
   m_ObjectHideFlags: 0

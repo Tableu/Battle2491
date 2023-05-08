@@ -27,6 +27,7 @@ public class AbilityVisuals : MonoBehaviour
         if (Vector2.Distance(transform.position,_target.transform.position) <= 0)
         {
             var health = _target.GetComponent<ShipHealth>();
+            Debug.Log(_target.name);
             if (health != null)
             {
                 health.TakeDamage(_abilityData.BaseDamage);
