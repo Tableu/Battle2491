@@ -15,7 +15,7 @@ MonoBehaviour:
   id: 
   parentList: {fileID: 0}
   displayName: 
-  visuals: {fileID: 0}
+  visuals: {fileID: 7966534846392858998, guid: 7e16e9237fdd7cb45bacdef240f64794, type: 3}
   mapIcon: {fileID: 0}
   cost: 0
   blocksMovement: 1
@@ -23,5 +23,5 @@ MonoBehaviour:
   health: 10
   speedMultiplier: 1
   damageMultiplier: 1
-  sensorRange: 50
+  sensorRange: 6
   targetRange: 0

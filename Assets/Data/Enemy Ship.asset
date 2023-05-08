@@ -19,9 +19,9 @@ MonoBehaviour:
   mapIcon: {fileID: 0}
   cost: 0
   blocksMovement: 0
-  abilityData: {fileID: 0}
+  abilityData: {fileID: 11400000, guid: 5d85a21ec532b914cbcb1282c020a690, type: 2}
   health: 10
-  speedMultiplier: 1
+  speedMultiplier: 0.01
   damageMultiplier: 1
-  sensorRange: 2
+  sensorRange: 5
   targetRange: 2

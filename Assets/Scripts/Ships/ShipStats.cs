@@ -72,7 +72,10 @@ namespace Ships.Components
             SensorRange.UpdateBaseValue(data.SensorRange);
 
             // Add ship visuals
-            _visuals = Instantiate(data.Visuals, transform);
+            if (data.Visuals != null)
+            {
+                _visuals = Instantiate(data.Visuals, transform);
+            }
 
             //Init hull
             ShipHealth shipHealth = gameObject.AddComponent<ShipHealth>();

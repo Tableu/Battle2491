@@ -16,8 +16,8 @@ TagManager:
   - Background
   - Enemies
   - Player
-  - 
-  - 
+  - EnemyVision
+  - PlayerVision
   - 
   - 
   - 
@@ -49,6 +49,9 @@ TagManager:
     locked: 0
   - name: Enemies
     uniqueID: 1621342959
+    locked: 0
+  - name: Projectiles
+    uniqueID: 3646377429
     locked: 0
   - name: Fog of War
     uniqueID: 3166336269

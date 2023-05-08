@@ -75,6 +75,7 @@ namespace Ships.Components
                 _targets.Remove(target);
                 if (_targets.Count == 0)
                 {
+                    _target = null;
                     OnTargetChanged?.Invoke();
                 }
             }

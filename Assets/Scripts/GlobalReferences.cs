@@ -13,11 +13,15 @@ public class GlobalReferences : MonoBehaviour
 
     [SerializeField] private FleetManager turretManager;
     [SerializeField] private GameObject fogOfWarCanvas;
+    [SerializeField] private GameObject projectileParent;
+    [SerializeField] private GameObject mothership;
 
     public GameObject Canvas => canvas;
     public GameObject FogOfWarCanvas => fogOfWarCanvas;
 
     public FleetManager TurretManager => turretManager;
+    public GameObject ProjectileParent => projectileParent;
+    public GameObject Mothership => mothership;
 
     public PlayerInputActions PlayerInputActions
     {

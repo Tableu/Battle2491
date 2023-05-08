@@ -34,7 +34,9 @@ public class TurretAttack : MonoBehaviour
         {
             if (_cooldown > _abilityData.Cooldown)
             {
-                Debug.Log("fire turret weapon");
+                var projectile = Instantiate(_abilityData.Visuals, GlobalReferences.Instance.ProjectileParent.transform);
+                projectile.transform.position = transform.position;
+                projectile.GetComponent<AbilityVisuals>()?.Initialize(_abilityData, _targetingHelper.Target, gameObject.layer);
                 _cooldown = 0;
             }
             else

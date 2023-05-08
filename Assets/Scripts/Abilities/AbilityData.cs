@@ -40,5 +40,6 @@ namespace Systems.Abilities
         public string AttackName => attackName;
         public int Cost => cost;
         public float BaseDamage => damage;
+        public float BaseSpeed => speed;
     }
 }

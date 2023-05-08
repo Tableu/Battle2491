@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 
   parentList: {fileID: 11400000, guid: 403282430c199a040b05e2eb35ffbd94, type: 2}
-  visuals: {fileID: 0}
+  visuals: {fileID: 779813155441567538, guid: 4496aa863dfe77946b672a2a0104ed0b, type: 3}
   attackName: basic_attack
   cost: 0
   modifiers: []
@@ -23,5 +23,5 @@ MonoBehaviour:
   tags: []
   fireSound: 
   hitSound: 
-  damage: 10
-  speed: 5
+  damage: 1
+  speed: 0.2

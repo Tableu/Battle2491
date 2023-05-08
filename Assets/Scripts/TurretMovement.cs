@@ -13,6 +13,6 @@ public class TurretMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.RotateAround(transform.parent.position, transform.parent.forward,40*Time.deltaTime);
+        transform.RotateAround(transform.parent.position, new Vector3(0,0,1),40*Time.deltaTime);
     }
 }
