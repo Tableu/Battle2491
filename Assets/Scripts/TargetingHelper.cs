@@ -28,6 +28,14 @@ namespace Ships.Components
             _targets = new List<ShipStats>();
         }
 
+        public void FixedUpdate()
+        {
+            if (_target == null && _targets.Count > 0)
+            {
+                _target = _targets[0];
+            }
+        }
+
         public void SetTarget(ShipStats target)
         {
             if (target == null)
