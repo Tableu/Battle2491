@@ -23,6 +23,8 @@ MonoBehaviour:
   health: 3
   speedMultiplier: 1
   damageMultiplier: 1
-  sensorRange: 2
+  sensorRange: 3
   targetRange: 2
   buyCooldown: 1
+  rotateRange: 5
+  rotateSpeed: 40

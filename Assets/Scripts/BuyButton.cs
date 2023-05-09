@@ -60,6 +60,6 @@ public class BuyButton : MonoBehaviour
         isReloading = true;
         text.gameObject.SetActive(false);
         GlobalReferences.Instance.TurretManager.SpawnShip(shipData,
-            GlobalReferences.Instance.TurretManager.transform.position + new Vector3(0,1,0));
+            GlobalReferences.Instance.TurretManager.transform.position + new Vector3(0,shipData.RotateRange,0));
     }
 }

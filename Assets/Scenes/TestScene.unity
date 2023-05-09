@@ -344,17 +344,12 @@ MonoBehaviour:
   shipBasePrefab: {fileID: 7843659089403125242, guid: 59e04468113b94b408114cff393f6607, type: 3}
   testShip: {fileID: 0}
   testSpawnPoint: {x: 0, y: 0}
---- !u!1 &235761604 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7843659088134648242, guid: 59e04468113b94b408114cff393f6607, type: 3}
-  m_PrefabInstance: {fileID: 7843659088168410742}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &235761606 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7843659088134648240, guid: 59e04468113b94b408114cff393f6607, type: 3}
   m_PrefabInstance: {fileID: 7843659088168410742}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 235761604}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 729230eb68194333a18a1b91b0fa08a8, type: 3}
@@ -863,7 +858,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tick: 10
   baseIncreaseRate: 10
-  startingAmount: 100
+  startingAmount: 1000
   text: {fileID: 470393749}
 --- !u!114 &470393749
 MonoBehaviour:
@@ -1086,11 +1081,6 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
---- !u!58 &538000490 stripped
-CircleCollider2D:
-  m_CorrespondingSourceObject: {fileID: 7250021312061931258, guid: 59e04468113b94b408114cff393f6607, type: 3}
-  m_PrefabInstance: {fileID: 7843659088168410742}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &663601616
 GameObject:
   m_ObjectHideFlags: 0
@@ -1926,7 +1916,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fleetName: 
   fleetId: 0
-  shipBasePrefab: {fileID: 0}
+  shipBasePrefab: {fileID: 3824871766564907574, guid: f2812277ff5db0948a852236399548bf, type: 3}
   testShip: {fileID: 0}
   testSpawnPoint: {x: 0, y: 0}
 --- !u!224 &1443957834 stripped
@@ -2352,22 +2342,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7843659089403125243, guid: 59e04468113b94b408114cff393f6607, type: 3}
   m_PrefabInstance: {fileID: 7843659088168410742}
   m_PrefabAsset: {fileID: 0}
---- !u!58 &2057946003
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2057945996}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
 --- !u!1 &2097797592
 GameObject:
   m_ObjectHideFlags: 0
@@ -2506,7 +2480,7 @@ PrefabInstance:
     - target: {fileID: 3636667459169468794, guid: 539590c05d4d39746a58e623d3f93a82, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 235761604}
+      objectReference: {fileID: 0}
     - target: {fileID: 3636667459169468794, guid: 539590c05d4d39746a58e623d3f93a82, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -2685,14 +2659,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 167423862}
     m_Modifications:
-    - target: {fileID: 7275153260199441860, guid: 59e04468113b94b408114cff393f6607, type: 3}
-      propertyPath: m_Layer
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 7843659089403125220, guid: 59e04468113b94b408114cff393f6607, type: 3}
-      propertyPath: rangeCollider
-      value: 
-      objectReference: {fileID: 538000490}
     - target: {fileID: 7843659089403125240, guid: 59e04468113b94b408114cff393f6607, type: 3}
       propertyPath: Line
       value: 

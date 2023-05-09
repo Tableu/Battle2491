@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7515352400554744951}
   - component: {fileID: 7250021312061931258}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: Vision
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -193,6 +193,7 @@ GameObject:
   - component: {fileID: 7843659089403125240}
   - component: {fileID: 7843659089403125222}
   - component: {fileID: 7843659089403125220}
+  - component: {fileID: 2057946003}
   m_Layer: 10
   m_Name: Player Mothership
   m_TagString: Untagged
@@ -207,7 +208,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7843659089403125242}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -17.98, y: -12.89, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
@@ -267,9 +268,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   data: {fileID: 11400000, guid: ed298dbe3cc8f3749a268b21631ae824, type: 2}
-  rangeCollider: {fileID: 0}
+  rangeCollider: {fileID: 7250021312061931258}
   exploredCircle: {fileID: 7843659089821051327}
   unexploredCircle: {fileID: 7843659089108647814}
+--- !u!58 &2057946003
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7843659089403125242}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
 --- !u!1 &7843659089821051327
 GameObject:
   m_ObjectHideFlags: 0

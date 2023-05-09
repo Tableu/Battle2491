@@ -18,10 +18,10 @@ MonoBehaviour:
   attackName: basic_attack
   cost: 0
   modifiers: []
-  cooldown: 20
+  cooldown: 30
   validTargets: 8
   tags: []
   fireSound: 
   hitSound: 
   damage: 1
-  speed: 0.2
+  speed: 0.1

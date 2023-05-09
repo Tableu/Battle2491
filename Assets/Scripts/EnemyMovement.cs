@@ -6,6 +6,7 @@ public class EnemyMovement : MonoBehaviour
     private GameObject _mothership;
 
     private ShipStats _shipStats;
+    private bool _reachedTarget;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,7 +19,20 @@ public class EnemyMovement : MonoBehaviour
     {
         if (_mothership != null && _mothership.transform != null && Vector2.Distance(transform.position,_mothership.transform.position) > 0)
         {
-            transform.position = Vector2.MoveTowards(transform.position, _mothership.transform.position,_shipStats.Data.BaseSpeedMultiplier);
+            if (!_reachedTarget && Vector2.Distance(transform.position, _mothership.transform.position) < _shipStats.Data.RotateRange)
+            {
+                _reachedTarget = true;
+            }
+
+            if (_reachedTarget)
+            {
+                transform.RotateAround(_mothership.transform.position, new Vector3(0,0,1),_shipStats.Data.RotateSpeed*Time.deltaTime);
+            }
+            else
+            {
+                transform.position = Vector2.MoveTowards(transform.position, _mothership.transform.position,
+                    _shipStats.Data.BaseSpeedMultiplier);
+            }
             transform.LookAt(_mothership.transform.position);
             transform.right = _mothership.transform.position - transform.position;
         }

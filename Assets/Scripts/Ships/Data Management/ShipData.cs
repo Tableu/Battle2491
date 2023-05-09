@@ -30,6 +30,8 @@ namespace Ships.DataManagement
         [Header("Config")]
         [SerializeField] private float targetRange;
         [SerializeField] private float buyCooldown;
+        [SerializeField] private float rotateRange;
+        [SerializeField] private float rotateSpeed;
         public float BaseHealth => health;
         public float BaseSpeedMultiplier => speedMultiplier;
         public float BaseDamageMultiplier => damageMultiplier;
@@ -42,5 +44,7 @@ namespace Ships.DataManagement
         public Sprite ShopIcon => shopIcon;
         public int Cost => cost;
         public float BuyCooldown => buyCooldown;
+        public float RotateRange => rotateRange;
+        public float RotateSpeed => rotateSpeed;
     }
 }
