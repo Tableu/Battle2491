@@ -20,9 +20,11 @@ MonoBehaviour:
   cost: 0
   blocksMovement: 1
   abilityData: {fileID: 0}
-  health: 1000
+  health: 1
   speedMultiplier: 0.01
   damageMultiplier: 1
   sensorRange: 6
   targetRange: 0
   buyCooldown: 0
+  rotateRange: 0
+  rotateSpeed: 0

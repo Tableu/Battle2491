@@ -48,7 +48,7 @@ namespace Ships.Components
             _healthDirty = true;
             if (Health <= 0.01)
             {
-                OnDestroyed?.Invoke(true);
+                OnDestroyed?.Invoke();
             }
         }
 
@@ -68,17 +68,14 @@ namespace Ships.Components
 
         
         public event Action OnHealthChanged;
-        public event Action<bool> OnDestroyed;
+        public event Action OnDestroyed;
         
         public void Start()
         {
-            OnDestroyed += delegate(bool disabled)
+            OnDestroyed += delegate
             {
-                if (disabled)
-                {
-                    //TODO handle other parts of death
-                    Destroy(gameObject); //Kill ship
-                }
+                //TODO handle other parts of death
+                Destroy(gameObject); //Kill ship
             };
         }
 
