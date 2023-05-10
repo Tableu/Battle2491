@@ -22,5 +22,5 @@ MonoBehaviour:
   - Rate: 15
     Max: 2000
     UpgradeCost: -1
-    LastLevel: 0
+    LastLevel: 1
   startingAmount: 0

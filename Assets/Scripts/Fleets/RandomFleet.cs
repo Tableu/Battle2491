@@ -7,5 +7,4 @@ using UnityEngine;
 public class RandomFleet : ScriptableObject
 {
     public List<RandomShipList> randomFleet;
-    public GameObject fleetVisualsPrefab;
 }

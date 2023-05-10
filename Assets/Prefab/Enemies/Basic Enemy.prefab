@@ -128,7 +128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a645a066f50681144b3b9be1e167d38b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: aab1dc72845f6334aad7c1ea7e2a6da6, type: 2}
+  data: {fileID: 0}
   rangeCollider: {fileID: 1241882660}
   exploredCircle: {fileID: 0}
   unexploredCircle: {fileID: 0}

@@ -9,6 +9,9 @@ public class RandomShipList
 {
     [SerializeField] private List<ShipData> randomShips;
     [SerializeField] private List<int> shipWeights;
+    [SerializeField] private Vector2 spawnPosition;
+
+    public Vector2 SpawnPosition => spawnPosition;
 
     public ShipData RandomShip()
     {
