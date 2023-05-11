@@ -16,6 +16,7 @@ namespace Ships.Components
         [SerializeField] private CircleCollider2D rangeCollider;
         [SerializeField] private GameObject exploredCircle;
         [SerializeField] private GameObject unexploredCircle;
+        [SerializeField] private LineRenderer lineRenderer;
         public ShipData Data => data;
         public GameObject Visuals => _visuals;
         public CircleCollider2D RangeCollider => rangeCollider; 
@@ -68,7 +69,7 @@ namespace Ships.Components
             // Set all the base values
             MaxHealth.UpdateBaseValue(data.BaseHealth);
             DamageMultiplier.UpdateBaseValue(data.BaseDamageMultiplier);
-            SpeedMultiplier.UpdateBaseValue(data.BaseSpeedMultiplier);
+            SpeedMultiplier.UpdateBaseValue(data.BaseSpeed);
             SensorRange.UpdateBaseValue(data.SensorRange);
 
             // Add ship visuals
@@ -93,6 +94,29 @@ namespace Ships.Components
             {
                 exploredCircle.transform.localScale = new Vector3(2*data.SensorRange, 2*data.SensorRange, 1);
             }
+
+            if (lineRenderer != null)
+            {
+                DrawCircle(lineRenderer, data.SensorRange-0.1f, 1);
+            }
+        }
+        
+        private void DrawCircle(LineRenderer line, float radius, float lineWidth)
+        {
+            var segments = 360;
+            
+            line.positionCount = segments + 1;
+
+            var pointCount = segments + 1; // add extra point to make startpoint and endpoint the same to close the circle
+            var points = new Vector3[pointCount];
+
+            for (int i = 0; i < pointCount; i++)
+            {
+                var rad = Mathf.Deg2Rad * (i * 360f / segments);
+                points[i] = new Vector3(Mathf.Sin(rad) * radius, Mathf.Cos(rad) * radius, -1);
+            }
+
+            line.SetPositions(points);
         }
 
         public event Action OnShipDestroyed;

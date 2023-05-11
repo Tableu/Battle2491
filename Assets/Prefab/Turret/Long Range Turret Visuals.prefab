@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7280561497704080998}
   - component: {fileID: 7280561497704080999}
   m_Layer: 10
-  m_Name: Visuals
+  m_Name: Long Range Turret Visuals
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: -550206215
   m_SortingLayer: 2
   m_SortingOrder: 1
-  m_Sprite: {fileID: 3955648633319148882, guid: db6cf2cf4a2f7574a918efded1522436, type: 3}
+  m_Sprite: {fileID: 6590665395996859728, guid: db6cf2cf4a2f7574a918efded1522436, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

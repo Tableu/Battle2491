@@ -15,7 +15,7 @@ public class SpawnMothership : MonoBehaviour
         if (line != null)
         {
             line.Line = mothershipPath;
-            line.Speed = mothershipData.BaseSpeedMultiplier;
+            line.Speed = mothershipData.BaseSpeed;
         }
     }
 

@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class AbilityVisuals : MonoBehaviour
 {
-    [SerializeField] private SpriteRenderer spriteRenderer;
     private ShipStats _target;
     private AbilityData _abilityData;
     public void Initialize(AbilityData abilityData, ShipStats target, int layer)
@@ -12,6 +11,11 @@ public class AbilityVisuals : MonoBehaviour
         _target = target;
         _abilityData = abilityData;
         gameObject.layer = layer;
+        if (_target != null && _target.gameObject != null && _target.transform != null)
+        {
+            transform.LookAt(_target.transform.position);
+            transform.right = _target.transform.position - transform.position;
+        }
     }
 
     public void FixedUpdate()
@@ -24,6 +28,8 @@ public class AbilityVisuals : MonoBehaviour
 
         var pos = _target.transform.position;
         transform.position = Vector2.MoveTowards(transform.position, pos,_abilityData.BaseSpeed);
+        transform.LookAt(_target.transform.position);
+        transform.right = _target.transform.position - transform.position;
         if (Vector2.Distance(transform.position,_target.transform.position) <= 0)
         {
             var health = _target.GetComponent<ShipHealth>();

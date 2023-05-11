@@ -10,18 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 247085d26a3004e4dab05963180145d2, type: 3}
-  m_Name: Basic Attack
+  m_Name: Long Range Attack
   m_EditorClassIdentifier: 
-  id: 
+  id: long range attack
   parentList: {fileID: 11400000, guid: 403282430c199a040b05e2eb35ffbd94, type: 2}
   visuals: {fileID: 779813155441567538, guid: 4496aa863dfe77946b672a2a0104ed0b, type: 3}
-  attackName: basic_attack
+  attackName: Long Range Attack
   cost: 0
   modifiers: []
-  cooldown: 40
+  cooldown: 0
   validTargets: 8
   tags: []
   fireSound: 
   hitSound: 
-  damage: 1
-  speed: 0.3
+  damage: 2
+  speed: 0.5

@@ -2,6 +2,7 @@ using System;
 using Systems;
 using Systems.Abilities;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Ships.DataManagement
 {
@@ -23,7 +24,7 @@ namespace Ships.DataManagement
 
         [Header("Base Stats")]
         [SerializeField] private float health = 10;
-        [SerializeField] private float speedMultiplier = 1;
+        [FormerlySerializedAs("speedMultiplier")] [SerializeField] private float baseSpeed = 1;
         [SerializeField] private float damageMultiplier = 1;
         [SerializeField] private float sensorRange = 50;
 
@@ -33,7 +34,7 @@ namespace Ships.DataManagement
         [SerializeField] private float rotateRange;
         [SerializeField] private float rotateSpeed;
         public float BaseHealth => health;
-        public float BaseSpeedMultiplier => speedMultiplier;
+        public float BaseSpeed => baseSpeed;
         public float BaseDamageMultiplier => damageMultiplier;
         public float TargetRange => targetRange;
         public bool BlocksMovement => blocksMovement;

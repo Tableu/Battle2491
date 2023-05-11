@@ -10,21 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1bfca83a82de7fd4086cf9c7f96116b9, type: 3}
-  m_Name: Turret
+  m_Name: Tank Turret
   m_EditorClassIdentifier: 
-  id: basic_turret
+  id: tank_turret
   parentList: {fileID: 11400000, guid: e361c69a8f7f4984b8f8d7f2db30f1fd, type: 2}
-  displayName: Turret
-  visuals: {fileID: 7280561497704080993, guid: 18df64cd7077e294eaac343306660e5b, type: 3}
-  shopIcon: {fileID: -2335896769177285084, guid: db6cf2cf4a2f7574a918efded1522436, type: 3}
-  cost: 100
+  displayName: Tank Turret
+  visuals: {fileID: 7280561497704080993, guid: b151e79d623b259449c1a8e8787889aa, type: 3}
+  shopIcon: {fileID: -5363976222699629636, guid: c588f9ea60903f5439f025cf883f20d9, type: 3}
+  cost: 500
   blocksMovement: 0
   abilityData: {fileID: 11400000, guid: 5d85a21ec532b914cbcb1282c020a690, type: 2}
-  health: 5
-  speedMultiplier: 1
-  damageMultiplier: 1
-  sensorRange: 5
-  targetRange: 2
-  buyCooldown: 1
+  health: 10
+  baseSpeed: 1
+  damageMultiplier: 5
+  sensorRange: 1
+  targetRange: 1
+  buyCooldown: 5
   rotateRange: 5
-  rotateSpeed: 40
+  rotateSpeed: 20

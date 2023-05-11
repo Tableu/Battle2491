@@ -31,7 +31,7 @@ public class EnemyMovement : MonoBehaviour
             else
             {
                 transform.position = Vector2.MoveTowards(transform.position, _mothership.transform.position,
-                    _shipStats.Data.BaseSpeedMultiplier);
+                    _shipStats.Data.BaseSpeed);
             }
             transform.LookAt(_mothership.transform.position);
             transform.right = _mothership.transform.position - transform.position;

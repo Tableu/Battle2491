@@ -10,21 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1bfca83a82de7fd4086cf9c7f96116b9, type: 3}
-  m_Name: Enemy Ship
+  m_Name: Long Range Turret
   m_EditorClassIdentifier: 
-  id: basic_enemy
-  parentList: {fileID: 11400000, guid: 8e83ab8017741474babe8f4dcd1c0bc2, type: 2}
-  displayName: Enemy
-  visuals: {fileID: 6026875326097111677, guid: 833ecb095060a0242962db5fb0adecfe, type: 3}
-  shopIcon: {fileID: 0}
-  cost: 0
-  blocksMovement: 0
+  id: long range turret
+  parentList: {fileID: 11400000, guid: e361c69a8f7f4984b8f8d7f2db30f1fd, type: 2}
+  displayName: Long Range Turret
+  visuals: {fileID: 7280561497704080993, guid: 440f6edaad54b0f4d83621038d0b8a8f, type: 3}
+  shopIcon: {fileID: 1221974371025249404, guid: c588f9ea60903f5439f025cf883f20d9, type: 3}
+  cost: 200
+  blocksMovement: 1
   abilityData: {fileID: 11400000, guid: 5d85a21ec532b914cbcb1282c020a690, type: 2}
-  health: 3
-  baseSpeed: 0.01
+  health: 5
+  baseSpeed: 1
   damageMultiplier: 1
   sensorRange: 5
-  targetRange: 2
-  buyCooldown: 0
-  rotateRange: 3
-  rotateSpeed: 60
+  targetRange: 1
+  buyCooldown: 3
+  rotateRange: 1
+  rotateSpeed: 10

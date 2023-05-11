@@ -549,7 +549,7 @@ PrefabInstance:
     - target: {fileID: 3636667459169468798, guid: 539590c05d4d39746a58e623d3f93a82, type: 3}
       propertyPath: shipData
       value: 
-      objectReference: {fileID: 11400000, guid: 573c4f7610f797a4f8914085d3e36558, type: 2}
+      objectReference: {fileID: 11400000, guid: f3a545bc630ef3442b373823232ff51a, type: 2}
     - target: {fileID: 3636667459169468804, guid: 539590c05d4d39746a58e623d3f93a82, type: 3}
       propertyPath: m_Name
       value: Buy Ship Button (1)
@@ -2954,6 +2954,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 3636667459169468798, guid: 539590c05d4d39746a58e623d3f93a82, type: 3}
+      propertyPath: shipData
+      value: 
+      objectReference: {fileID: 11400000, guid: fcdb679247227264eb1ab96eba805fee, type: 2}
     - target: {fileID: 3636667459169468804, guid: 539590c05d4d39746a58e623d3f93a82, type: 3}
       propertyPath: m_Name
       value: Buy Ship Button
